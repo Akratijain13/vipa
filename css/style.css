@@ -1,0 +1,177 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #000;
+    color: #fff;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+.nav-container{
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.content-section {
+    margin: 40px auto;
+    position: relative;
+}
+
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.section-header h2 {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.more-link {
+    color: #FFA500;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+}
+
+.more-link i {
+    margin-left: 5px;
+}
+
+
+.program-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    height: 100%;
+    transition: transform 0.3s ease;
+}
+
+.program-card:hover {
+    transform: scale(1.05);
+}
+
+.program-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.program-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 15px;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+}
+
+.program-info h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.program-info p {
+    font-size: 14px;
+    color: #ddd;
+}
+
+
+.mobile-nav {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #111;
+    z-index: 1000;
+    height: 60px;
+}
+
+.mobile-nav a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    padding: 8px 0;
+    color: #888;
+    font-size: 12px;
+}
+
+.mobile-nav a.active {
+    color: #FFA500;
+}
+
+.mobile-nav i {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+
+@media screen and (max-width: 960px) {
+    .mobile-nav {
+        display: flex;
+    }
+    
+    body {
+        padding-bottom: 60px;
+    }
+    
+    .footer {
+        display: none; 
+    }
+    
+    .section-header h2 {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .carousel-caption h1 {
+        font-size: 30px;
+    }
+    
+    .carousel-caption h2 {
+        font-size: 18px;
+    }
+    
+    .content-section {
+        margin: 20px auto;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .carousel-caption h1 {
+        font-size: 24px;
+    }
+    
+    .carousel-caption h2 {
+        font-size: 16px;
+    }
+    
+    .program-info h3 {
+        font-size: 16px;
+    }
+    
+    .section-header h2 {
+        font-size: 18px;
+    }
+}
