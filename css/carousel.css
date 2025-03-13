@@ -182,11 +182,11 @@
 }
 
 #documentary-carousel .carousel-prev {
-    left: -15px;
+    left: 5px;
 }
 
 #documentary-carousel .carousel-next {
-    right: -15px;
+    right: 5px;
 }
 
 @media screen and (max-width: 960px) {
